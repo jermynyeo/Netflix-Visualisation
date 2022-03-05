@@ -19,7 +19,7 @@ cast_G = nw.generateGraph(df)
 def welcome():
     return render_template('index.html')
 
-@charts_blueprint.route("/squid_wc/")
+@charts_blueprint.route("/wordcloud")
 def getWordCloudSquid():
     full_filename = os.path.join('../static/squid_hash_wc.png', methods=["GET"])
     print (full_filename)
