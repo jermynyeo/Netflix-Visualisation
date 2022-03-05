@@ -14,6 +14,11 @@ cast_G = networkChart.generateGraph(df)
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = WC_FOLDER
 
+@app.route("/")
+def welcome():
+    return "WELCOME TO IS428 PROJECT"
+
+
 @app.route("/squid_wc")
 def getWordCloudSquid():
     full_filename = os.path.join(app.config['UPLOAD_FOLDER'], 'squid_hash_wc.png')
