@@ -26,6 +26,8 @@ def getWordCloudSquid(show):
 @charts_blueprint.route("/cast_network/<cast>", methods=["GET"])
 def getCastNetwork(cast):
     fig = nw.getCastNetwork(cast_G, cast)
+    if (fig == False): 
+        return render_template('error.html', error = "Sorry, this cast doesn't exist in our current database.")
     chart_div_string = pyo.offline.plot(fig, include_plotlyjs=False, output_type='div')
     chart_div_for_use_in_jinja_template = Markup(chart_div_string)
     return render_template('network.html', chart=chart_div_for_use_in_jinja_template )

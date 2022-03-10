@@ -4,7 +4,43 @@
     <title>Word Cloud</title>
 </head>
 <body>
-    <img src="{{ ht_wc }}">
-    <img src="{{ text_wc }}">
+    <div class="row">
+        <div class="column">
+            <h1>Tweet Content Wordcloud</h1>
+            <div class="crop">
+                <img src="{{ text_wc }}">
+            </div>
+        </div>
+        <div class="column">
+            <h1>Hashtags Wordcloud</h1>
+            <div class="crop">
+                <img src="{{ ht_wc }}">
+            </div>
+        </div>
+    </div>
 </body>
 </html>
+
+<style>
+    .crop {
+        width: 500px;
+        height: 450px;
+        overflow: hidden;
+    }
+
+    .crop img {
+        width: 1200px;
+        height: 900px;
+        margin: -200px 0 0 -250px;
+    }
+
+    .row {
+        display: flex;
+    }
+
+    .column {
+        flex: 50%;
+        padding: 5px;
+        text-align: center;
+    }
+</style>

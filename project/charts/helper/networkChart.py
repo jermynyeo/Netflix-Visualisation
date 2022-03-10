@@ -14,11 +14,16 @@ def generateGraph(df, min_weight = 0):
 
 def getCastNetwork(G, cast):
     
+    subG_nodes = None
+
     for adj in G.adjacency():
         if (adj[0].lower() == cast.lower()):
             subG_nodes = [adj[0]]
             subG_nodes += adj[1].keys()
             break
+    
+    if (subG_nodes == None):
+        return False
 
     G = G.subgraph(subG_nodes)
 
