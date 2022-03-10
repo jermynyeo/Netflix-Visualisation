@@ -9,21 +9,19 @@ import networkx as nx
 import pandas as pd
 from .helper import networkChart as nw
 
-# print ("HI")
-# import networkChart 
-
 df = pd.read_csv("./Data/generated/cast_network.csv")
 cast_G = nw.generateGraph(df)
 
 @charts_blueprint.route("/", methods=["GET"])
+@charts_blueprint.route("/index", methods=["GET"])
 def welcome():
     return render_template('index.html')
 
-@charts_blueprint.route("/wordcloud", methods=["GET"])
-def getWordCloudSquid():
-    full_filename = os.path.join('../static/squid_hash_wc.png')
-    print (full_filename)
-    return render_template('wordcloud.html', wc_img = full_filename )
+@charts_blueprint.route("/wordcloud/<show>", methods=["GET"])
+def getWordCloudSquid(show):
+    textWC = os.path.join(f'../static/{show}_text.png')
+    hashtagWC = os.path.join(f'../static/{show}_hashtags.png')
+    return render_template('wordcloud.html', text_wc = textWC, ht_wc = hashtagWC)
 
 @charts_blueprint.route("/cast_network/<cast>", methods=["GET"])
 def getCastNetwork(cast):
