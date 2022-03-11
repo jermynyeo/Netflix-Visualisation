@@ -12,20 +12,22 @@ def generateGraph(df, min_weight = 0):
             G.add_edge(row["cast1"], row["cast2"], weight = row["count"])
     return G
 
-def getCastNetwork(G, cast):
+def getCastNetwork(G, show, casts):
     
-    subG_nodes = None
+    all_casts_nodes = []
 
-    for adj in G.adjacency():
-        if (adj[0].lower() == cast.lower()):
-            subG_nodes = [adj[0]]
-            subG_nodes += adj[1].keys()
-            break
+    for cast in casts: 
+        for adj in G.adjacency():
+            if (adj[0] == cast):
+                subG_nodes = [adj[0]]
+                subG_nodes += adj[1].keys()
+                break
+        all_casts_nodes += subG_nodes
     
-    if (subG_nodes == None):
+    if (all_casts_nodes == []):
         return False
 
-    G = G.subgraph(subG_nodes)
+    G = G.subgraph(all_casts_nodes)
 
     pos_ = nx.spring_layout(G)
 
@@ -52,18 +54,28 @@ def getCastNetwork(G, cast):
         
     node_x = []
     node_y = []
+
+    cast_x = []
+    cast_y = []
+
+    cast_label = []
     for node in G.nodes():
         x, y = pos_[node][0], pos_[node][1] 
         node_x.append(x)
         node_y.append(y)
+        if (node in casts): 
+            cast_x.append(x)
+            cast_y.append(y)
+            cast_label.append(node)
 
     search_trace = go.Scatter(
-        x=[pos_[subG_nodes[0]][0]], y=[pos_[subG_nodes[0]][1]],
-        mode='markers',
-        hoverinfo='text',
+        x=cast_x, y=cast_y,
+        mode='markers+text',
+        text = cast_label,
+        textposition="top center",
         marker=dict(
             color='red',
-            line_width=2))
+            line_width=0))
 
     node_trace = go.Scatter(
         x=node_x, y=node_y,
@@ -98,16 +110,18 @@ def getCastNetwork(G, cast):
     node_trace.text = node_text
     node_trace.marker.size = node_size
 
-
     fig = go.Figure(data=edge_trace + [node_trace] + [search_trace],
                 layout=go.Layout(
-                    title=f'{subG_nodes[0]}\'s Network Graph',
+                    title=f'{show}\'s Cast Network Graph',
                     titlefont_size=16,
                     showlegend=False,
                     hovermode='closest',
                     margin=dict(b=20,l=5,r=5,t=40),
                     xaxis=dict(showgrid=False, zeroline=False, showticklabels=False),
-                    yaxis=dict(showgrid=False, zeroline=False, showticklabels=False))
+                    yaxis=dict(showgrid=False, zeroline=False, showticklabels=False),          
+                    autosize=False,
+                    width=700,
+                    height=800)
                     )
                     
     return fig

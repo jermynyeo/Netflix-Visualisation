@@ -6,14 +6,16 @@
 <body>
     <div class="row">
         <div class="column">
-            <h1>Tweet Content Wordcloud</h1>
-            <div class="crop">
+            
+            <div class="crop" id="div1">
+                <h1>Tweet Content Wordcloud</h1>
                 <img src="{{ text_wc }}">
             </div>
         </div>
         <div class="column">
-            <h1>Hashtags Wordcloud</h1>
-            <div class="crop">
+            
+            <div class="crop" id="div2">
+                <h1>Hashtags Wordcloud</h1>
                 <img src="{{ ht_wc }}">
             </div>
         </div>
@@ -22,16 +24,19 @@
 </html>
 
 <style>
-    .crop {
-        width: 500px;
-        height: 450px;
-        overflow: hidden;
+ 
+    #div1{
+        float:left;
     }
 
+    #div2{
+        float:right;
+     
+    }
+    
     .crop img {
-        width: 1200px;
-        height: 900px;
-        margin: -200px 0 0 -250px;
+        width: 750px;
+        height: 550px;
     }
 
     .row {
@@ -39,8 +44,8 @@
     }
 
     .column {
-        flex: 50%;
-        padding: 5px;
+        flex: 30%;
+        padding: 2px;
         text-align: center;
     }
 </style>
