@@ -20,6 +20,7 @@ def welcome():
 
 @charts_blueprint.route("/wordcloud/<show>", methods=["GET"])
 def getWordCloudSquid(show):
+    show = show.lower()
     textWC = os.path.join(f'../static/wc/{show}_text.png')
     hashtagWC = os.path.join(f'../static/wc/{show}_hashtags.png')
     return render_template('wordcloud.html', text_wc = textWC, ht_wc = hashtagWC)
