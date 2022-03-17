@@ -7,3 +7,4 @@ nltk==3.6.5
 Frozen-Flask==0.15
 networkx==2.7
 gunicorn==20.1.0
+text2emotion==0.0.5
