@@ -74,6 +74,7 @@ def getCastNetwork(G, show, casts):
         text = cast_label,
         textposition="top center",
         marker=dict(
+            size= 5,
             color='red',
             line_width=0))
 
@@ -82,6 +83,7 @@ def getCastNetwork(G, show, casts):
         mode='markers',
         hoverinfo='text',
         marker=dict(
+            size= 10,
             showscale=True,
             # colorscale options
             #'Greys' | 'YlGnBu' | 'Greens' | 'YlOrRd' | 'Bluered' | 'RdBu' |
