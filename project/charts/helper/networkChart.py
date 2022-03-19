@@ -100,15 +100,12 @@ def getCastNetwork(G, show, casts):
 
     node_adjacencies = []
     node_text = []
-    node_size = []
     for node, adjacencies in enumerate(G.adjacency()):
         node_adjacencies.append(len(adjacencies[1]))
         node_text.append(f'{adjacencies[0]} has {len(adjacencies[1])} connection(s)')
-        node_size.append(len(adjacencies[1]) * 1.2) 
 
     node_trace.marker.color = node_adjacencies
     node_trace.text = node_text
-    node_trace.marker.size = node_size
 
     fig = go.Figure(data=edge_trace + [node_trace] + [search_trace],
                 layout=go.Layout(
