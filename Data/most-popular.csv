@@ -1,41 +1,41 @@
-category,rank,show_title,season_title,hours_viewed_first_28_days
-Films (English),1,Red Notice,,364020000
-Films (English),2,Don't Look Up,,359790000
-Films (English),3,Bird Box,,282020000
-Films (English),4,Extraction,,231340000
-Films (English),5,The Unforgivable,,214700000
-Films (English),6,The Irishman,,214570000
-Films (English),7,The Kissing Booth 2,,209250000
-Films (English),8,6 Underground,,205470000
-Films (English),9,Spenser Confidential,,197320000
-Films (English),10,Enola Holmes,,189900000
-Films (Non-English),1,Blood Red Sky,,110520000
-Films (Non-English),2,The Platform,,108090000
-Films (Non-English),3,Below Zero,,78300000
-Films (Non-English),4,Through My Window,,67950000
-Films (Non-English),5,Rogue City,,66600000
-Films (Non-English),6,The Forgotten Battle,,60940000
-Films (Non-English),7,Lost Bullet,,58320000
-Films (Non-English),8,Spoiled Brats,,56900000
-Films (Non-English),9,#Alive,,54620000
-Films (Non-English),10,Space Sweepers,,53340000
-TV (English),1,Bridgerton,Bridgerton: Season 1,625490000
-TV (English),2,Stranger Things,Stranger Things 3,582100000
-TV (English),3,The Witcher,The Witcher: Season 1,541010000
-TV (English),4,13 Reasons Why,13 Reasons Why: Season 2,496120000
-TV (English),5,The Witcher,The Witcher: Season 2,484340000
-TV (English),6,13 Reasons Why,13 Reasons Why: Season 1,475570000
-TV (English),7,Maid,Maid: Limited Series,469090000
-TV (English),8,You,You: Season 3,467830000
-TV (English),9,You,You: Season 2,457370000
-TV (English),10,Stranger Things,Stranger Things 2,427440000
-TV (Non-English),1,Squid Game,Squid Game: Season 1,1650450000
-TV (Non-English),2,Money Heist,Money Heist: Part 4,619010000
-TV (Non-English),3,All of Us Are Dead,All of Us Are Dead: Season 1,474260000
-TV (Non-English),4,Money Heist,Money Heist: Part 3,426400000
-TV (Non-English),5,Money Heist,Money Heist: Part 5,395130000
-TV (Non-English),6,Café con aroma de mujer,Café con aroma de mujer: Season 1,326910000
-TV (Non-English),7,Lupin,Lupin: Part 1,316830000
-TV (Non-English),8,Elite,Elite: Season 3,275300000
-TV (Non-English),9,Who Killed Sara?,Who Killed Sara?: Season 1,266430000
-TV (Non-English),10,Elite,Elite: Season 4,257090000
+category,rank,show_title,season_title,hours_viewed_first_28_days,genre
+TV (Non-English),1,Squid Game,Squid Game: Season 1,1650450000,"Korean, TV Thrillers"
+TV (English),1,Bridgerton,Bridgerton: Season 1,625490000,"Romantic TV Dramas, TV Programmes Based on Books, Period Pieces"
+TV (Non-English),2,Money Heist,Money Heist: Part 4,619010000,"Crime Programmes, Spanish, TV Thrillers"
+TV (English),2,Stranger Things,Stranger Things 3,582100000,"Sci-Fi TV, Teen Programmes, Horror Programmes"
+TV (English),3,The Witcher,The Witcher: Season 1,541010000,"US Movies, Films Based on Books, Action & Adventure"
+TV (English),4,13 Reasons Why,13 Reasons Why: Season 2,496120000,"Mystery Programmes, Courtroom TV programmes, TV Programmes Based on Books"
+TV (English),5,The Witcher,The Witcher: Season 2,484340000,"US Movies, Films Based on Books, Action & Adventure"
+TV (English),6,13 Reasons Why,13 Reasons Why: Season 1,475570000,"Mystery Programmes, Courtroom TV programmes, TV Programmes Based on Books"
+TV (Non-English),3,All of Us Are Dead,All of Us Are Dead: Season 1,474260000,"Korean, Korean TV Programmes Based on Webtoon, Teen Programmes"
+TV (English),7,Maid,Maid: Limited Series,469090000,"TV Programmes Based on Books, Social Issue TV Dramas, Drama Programmes"
+TV (English),8,You,You: Season 3,467830000,"TV Programmes Based on Books, TV Thrillers, Drama Programmes"
+TV (English),9,You,You: Season 2,457370000,"TV Programmes Based on Books, TV Thrillers, Drama Programmes"
+TV (English),10,Stranger Things,Stranger Things 2,427440000,"Sci-Fi TV, Teen Programmes, Horror Programmes"
+TV (Non-English),4,Money Heist,Money Heist: Part 3,426400000,"Crime Programmes, Spanish, TV Thrillers"
+TV (Non-English),5,Money Heist,Money Heist: Part 5,395130000,"Crime Programmes, Spanish, TV Thrillers"
+Films (English),1,Red Notice,,364020000,"US Movies, Action & Adventure, Commedies"
+Films (English),2,Don't Look Up,,359790000,
+TV (Non-English),6,Café con aroma de mujer,Café con aroma de mujer: Season 1,326910000,
+TV (Non-English),7,Lupin,Lupin: Part 1,316830000,
+Films (English),3,Bird Box,,282020000,
+TV (Non-English),8,Elite,Elite: Season 3,275300000,
+TV (Non-English),9,Who Killed Sara?,Who Killed Sara?: Season 1,266430000,
+TV (Non-English),10,Elite,Elite: Season 4,257090000,
+Films (English),4,Extraction,,231340000,
+Films (English),5,The Unforgivable,,214700000,
+Films (English),6,The Irishman,,214570000,
+Films (English),7,The Kissing Booth 2,,209250000,
+Films (English),8,6 Underground,,205470000,
+Films (English),9,Spenser Confidential,,197320000,
+Films (English),10,Enola Holmes,,189900000,
+Films (Non-English),1,Blood Red Sky,,110520000,
+Films (Non-English),2,The Platform,,108090000,
+Films (Non-English),3,Below Zero,,78300000,
+Films (Non-English),4,Through My Window,,67950000,
+Films (Non-English),5,Rogue City,,66600000,
+Films (Non-English),6,The Forgotten Battle,,60940000,
+Films (Non-English),7,Lost Bullet,,58320000,
+Films (Non-English),8,Spoiled Brats,,56900000,
+Films (Non-English),9,#Alive,,54620000,
+Films (Non-English),10,Space Sweepers,,53340000,
