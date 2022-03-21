@@ -9,7 +9,7 @@ FILE_DIR_UNPOP = "Data/unpop_tweets/"
 
 def getCSVdata(file):
     data = pd.read_csv(file)
-    data = data.mean()
+    data = data.mean(numeric_only=True)
     data['title'] = file.split("/")[-1].split('.')[0]
     return data
 
