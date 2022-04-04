@@ -31,14 +31,18 @@ def getData():
     unpop_df.drop("Unnamed: 0", axis = 1, inplace = True)
     return df, unpop_df
 
-def genEmoRadar(df):
+def genEmoRadar(df,showType):
     categories = ['angry', 'fear', 'happy',
        'sad', 'surprise']
     
     emotions_df = df[categories]
     emotions_df["title"] = df.title
     
-    fig = go.Figure()
+    fig = go.Figure( 
+        layout=go.Layout(
+                    title=f'Emotions of {showType} shows on Netflix',
+                    width=500,
+                    height=500))   
 
     for i, row in emotions_df.iterrows(): 
         fig.add_trace(go.Scatterpolar(
@@ -60,13 +64,17 @@ def genEmoRadar(df):
     return fig
 
 
-def genSentRadar(df):
+def genSentRadar(df,showType):
     categories = ['neg','neu','pos','comp']
     
     sentiment_df = df[categories]
     sentiment_df["title"] = df.title
 
-    fig = go.Figure()   
+    fig = go.Figure( 
+        layout=go.Layout(
+                    title=f'Sentiments of {showType} shows on Netflix',
+                    width=500,
+                    height=500))   
 
     for i, row in sentiment_df.iterrows(): 
         #print(row[:5])

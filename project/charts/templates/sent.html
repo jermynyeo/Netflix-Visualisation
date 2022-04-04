@@ -1,20 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Emotions</title>
+    <title>Sentiments</title>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </head>
 <body>
-    {{pop}}{{unpop}}
+    <div id="containerpop">
+    <div id="pop">{{pop}}</div>
+    <div id="unpop">{{unpop}}</div>
+    </div>
 </html>
 
 <style>
+    .svg.main-svg{
+        width:50%;
+    }
+    #containerpop{
+        width:100%
+    }
     html,body{
         width: 100%;
         height: 100%;
         margin: 0px;
         padding: 0px;
-        overflow-x: hidden; 
+        overflow: hidden;
+
     }
     
     #header1{
@@ -23,11 +33,23 @@
 
 
     .row {
-        float: left;
-        display: block;
         clear:left;
         padding:0px;
         text-align:center;
+        display:block;
     }
+
+    #pop{
+        float:left;
+        display:block;
+        width:35%;
+    }
+    #unpop{
+        float:left;
+        display:block;
+        margin-left:10%;
+        width:35%;
+    }
+
 
 </style>

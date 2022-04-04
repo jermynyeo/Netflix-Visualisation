@@ -1,0 +1,19 @@
+snscrape --jsonl --progress --max-results 15000 --since 2021-09-10 twitter-search “Squid Game” > “squid game”.json
+snscrape --jsonl --progress --max-results 15000 --since 2018-09-01 twitter-search “You” > “you”.json
+snscrape --jsonl --progress --max-results 15000 --since 2017-03-12 twitter-search “Maid” > “maid”.json
+snscrape --jsonl --progress --max-results 15000 --since 2021-09-10 twitter-search “Red Notice” > “red notice”.json
+snscrape --jsonl --progress --max-results 15000 --since 2019-09-02 twitter-search “13 Reasons Why” > “13 reasons why”.json
+snscrape --jsonl --progress --max-results 15000 --since 2018-03-07 twitter-search “Bridgerton> “bridgerton”.json
+snscrape --jsonl --progress --max-results 15000 --since 2019-03-28 twitter-search “Stranger Things” > “stranger things”.json
+snscrape --jsonl --progress --max-results 15000 --since 2021-12-10 twitter-search “The Witcher” > “the witcher”.json
+snscrape --jsonl --progress --max-results 15000 --since 2020-03-28 twitter-search “Money Heist” > “money heist”.json
+snscrape --jsonl --progress --max-results 15000 --since 2022-01-22 twitter-search “All Of Us Are Dead” > “all of us are dead”.json
+snscrape --jsonl --progress --max-results 15000 --since 2021-05-24 twitter-search "Racket Boys" > "racket boys".json
+snscrape --jsonl --progress --max-results 15000 --since 2019-06-18 twitter-search "Jinn" > "jinn".json
+snscrape --jsonl --progress --max-results 15000 --since 2018-03-24 twitter-search "Reboot: The Guardian Code" > "reboot: the guardian code".json
+snscrape --jsonl --progress --max-results 15000 --since 2018-06-16 twitter-search "Too Hot To Handle" > "too hot to handle".json
+snscrape --jsonl --progress --max-results 15000 --since 2020-08-01 twitter-search "Tiny Creatures" > "tiny creatures".json
+snscrape --jsonl --progress --max-results 15000 --since 2020-08-03 twitter-search "Away" > "away".json
+snscrape --jsonl --progress --max-results 15000 --since 2021-07-01 twitter-search "Resident Evil: Infinite Darkness" > "resident evil: infinite darkness".json
+snscrape --jsonl --progress --max-results 15000 --since 2019-10-26 twitter-search "Hache" > "hache".json
+snscrape --jsonl --progress --max-results 15000 --since 2020-03-07 twitter-search "Freud" > "freud".json

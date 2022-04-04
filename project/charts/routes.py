@@ -44,8 +44,8 @@ def getCastNetwork(show):
 
 @charts_blueprint.route("/emo_overview", methods = ["Get"])
 def getEmoOverview(): 
-    fig = smc.genEmoRadar(pop_df)
-    fig2 = smc.genEmoRadar(unpop_df)
+    fig = smc.genEmoRadar(pop_df, "popular")
+    fig2 = smc.genEmoRadar(unpop_df, "unpopular")
 
     chart_div_string = pyo.offline.plot(fig, include_plotlyjs=False, output_type='div') 
     chart_div_for_use_in_jinja_template = Markup(chart_div_string)
@@ -56,12 +56,12 @@ def getEmoOverview():
 
 @charts_blueprint.route("/sent_overview", methods = ["Get"])
 def getSentOverview(): 
-    fig = smc.genSentRadar(pop_df)
-    fig2 = smc.genSentRadar(unpop_df)
+    fig = smc.genSentRadar(pop_df, "popular")
+    fig2 = smc.genSentRadar(unpop_df, "unpopular")
     
     chart_div_string = pyo.offline.plot(fig, include_plotlyjs=False, output_type='div') 
     chart_div_for_use_in_jinja_template = Markup(chart_div_string)
     chart_div_string2 = pyo.offline.plot(fig2, include_plotlyjs=False, output_type='div')
     chart_div_for_use_in_jinja_template2 = Markup(chart_div_string2)
 
-    return render_template('emo.html', pop=chart_div_for_use_in_jinja_template , unpop=chart_div_for_use_in_jinja_template2)
+    return render_template('sent.html', pop=chart_div_for_use_in_jinja_template , unpop=chart_div_for_use_in_jinja_template2)
