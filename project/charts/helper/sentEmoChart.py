@@ -41,6 +41,7 @@ def genEmoRadar(df,showType):
     fig = go.Figure( 
         layout=go.Layout(
                     title=f'Emotions of {showType} shows on Netflix',
+                    title_x=0.5,
                     width=500,
                     height=500))   
 
@@ -73,6 +74,7 @@ def genSentRadar(df,showType):
     fig = go.Figure( 
         layout=go.Layout(
                     title=f'Sentiments of {showType} shows on Netflix',
+                    title_x=0.5,
                     width=500,
                     height=500))   
 
