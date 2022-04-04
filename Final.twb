@@ -210,7 +210,7 @@
       <size sizing-mode='automatic' />
       <zones>
         <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
-          <zone forceUpdate='' h='98160' id='3' param='https://is428project.herokuapp.com/sent_overview' type-v2='web' w='49444' x='556' y='920'>
+          <zone forceUpdate='' h='48940' id='3' param='https://is428project.herokuapp.com/sent_overview' type-v2='web' w='98698' x='651' y='50000'>
             <zone-style>
               <format attr='border-color' value='#000000' />
               <format attr='border-style' value='none' />
@@ -218,7 +218,7 @@
               <format attr='margin' value='4' />
             </zone-style>
           </zone>
-          <zone forceUpdate='' h='98160' id='5' param='https://is428project.herokuapp.com/emo_overview' type-v2='web' w='49444' x='50000' y='920'>
+          <zone forceUpdate='' h='48940' id='5' param='https://is428project.herokuapp.com/emo_overview' type-v2='web' w='98698' x='651' y='1060'>
             <zone-style>
               <format attr='border-color' value='#000000' />
               <format attr='border-style' value='none' />
@@ -238,9 +238,9 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='23' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98160' id='22' param='vert' type-v2='layout-flow' w='98888' x='556' y='920'>
-                <zone fixed-size='280' forceUpdate='' h='98160' id='3' is-fixed='true' param='https://is428project.herokuapp.com/sent_overview' type-v2='web' w='49444' x='556' y='920'>
+            <zone h='100000' id='27' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97880' id='26' param='vert' type-v2='layout-flow' w='98698' x='651' y='1060'>
+                <zone fixed-size='280' forceUpdate='' h='48940' id='5' is-fixed='true' param='https://is428project.herokuapp.com/emo_overview' type-v2='web' w='98698' x='651' y='1060'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -249,7 +249,7 @@
                     <format attr='padding' value='0' />
                   </zone-style>
                 </zone>
-                <zone fixed-size='280' forceUpdate='' h='98160' id='5' is-fixed='true' param='https://is428project.herokuapp.com/emo_overview' type-v2='web' w='49444' x='50000' y='920'>
+                <zone fixed-size='280' forceUpdate='' h='48940' id='3' is-fixed='true' param='https://is428project.herokuapp.com/sent_overview' type-v2='web' w='98698' x='651' y='50000'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
                     <format attr='border-style' value='none' />
@@ -341,8 +341,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='700' minheight='700' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='55' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='97916' id='54' param='vert' type-v2='layout-flow' w='98828' x='586' y='1042'>
+            <zone h='100000' id='59' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97916' id='58' param='vert' type-v2='layout-flow' w='98828' x='586' y='1042'>
                 <zone custom-title='true' h='4239' id='12' mode='compact' param='[Parameters].[Parameter 1]' type-v2='paramctrl' w='98828' x='586' y='1042'>
                   <formatted-text>
                     <run>Pick a Show</run>
@@ -388,27 +388,23 @@
     </dashboard>
   </dashboards>
   <windows source-height='30'>
-    <window class='dashboard' maximized='true' name='Show Information'>
+    <window class='dashboard' name='Show Information'>
       <viewpoints />
       <active id='12' />
       <simple-id uuid='{0CAD586B-8AAB-45B4-BB28-22A3E061C9C0}' />
     </window>
-    <window class='dashboard' name='SentEmo Comparison'>
+    <window class='dashboard' maximized='true' name='SentEmo Comparison'>
       <viewpoints />
-      <active id='5' />
+      <active id='-1' />
       <simple-id uuid='{791ADC8D-13CE-4DB9-979A-00ABB40EC069}' />
     </window>
   </windows>
   <thumbnails>
     <thumbnail height='384' name='SentEmo Comparison' width='384'>
       iVBORw0KGgoAAAANSUhEUgAAAYAAAAGACAYAAACkx7W/AAAACXBIWXMAAA7DAAAOwwHHb6hk
-      AAAFxklEQVR4nO3YzUpCUQBG0WsKEhcc9ge9/ys1qaBA0CcIKW+zQNCZaLDXmh3O5BudDWc2
-      TdM0AJBzc+0BAFyHAABECQBAlAAARAkAQJQAAEQtTl28v70M47i65BaAs9jvf4aHx+e/8+fH
-      67Bc3l5x0f90MgDjuBru7p8uuQXgLLab9cF5ubz1nh3hCwggSgAAogQAIEoAAKIEACBKAACi
-      BAAgSgAAogQAIEoAAKIEACBKAACiBAAgSgAAogQAIEoAAKIEACBKAACiBAAgSgAAogQAIEoA
-      AKIEACBKAACiBAAgSgAAogQAIEoAAKIEACBKAACiBAAgSgAAogQAIEoAAKIEACBKAACiBAAg
-      SgAAogQAIEoAAKIEACBKAACiBAAgSgAAogQAIEoAAKIEACBKAACiBAAgSgAAogQAIEoAAKIE
-      ACBKAACiBAAgSgAAogQAIEoAAKIEACBKAACiBAAgSgAAogQAIEoAAKIEACBKAACiBAAgSgAA
+      AAAFvUlEQVR4nO3ZMWpCQRhG0WcQRARLBfe/qDRJIAFBVxCEOFnBa8fintNO83UX/tmMMcYC
+      QM7bqwcA8BoCABAlAABRAgAQJQAAUQIAELVde/j6fF8Oh+PMLQBMtBqAw+G4nM6XmVsAmMgJ
+      CCBKAACiBAAgSgAAogQAIEoAAKIEACBKAACiBAAgSgAAogQAIEoAAKIEACBKAACiBAAgSgAA
       ogQAIEoAAKIEACBKAACiBAAgSgAAogQAIEoAAKIEACBKAACiBAAgSgAAogQAIEoAAKIEACBK
       AACiBAAgSgAAogQAIEoAAKIEACBKAACiBAAgSgAAogQAIEoAAKIEACBKAACiBAAgSgAAogQA
       IEoAAKIEACBKAACiBAAgSgAAogQAIEoAAKIEACBKAACiBAAgSgAAogQAIEoAAKIEACBKAACi
@@ -419,17 +415,21 @@
       ogQAIEoAAKIEACBKAACiBAAgSgAAogQAIEoAAKIEACBKAACiBAAgSgAAogQAIEoAAKIEACBK
       AACiBAAgSgAAogQAIEoAAKIEACBKAACiBAAgSgAAogQAIEoAAKIEACBKAACiBAAgSgAAogQA
       IEoAAKIEACBKAACiBAAgSgAAogQAIEoAAKIEACBKAACiBAAgSgAAogQAIEoAAKIEACBKAACi
-      BAAgSgAAogQAIEoAAKIEACBKAACiBAAgSgAAogQAIEoAAKIEACBKAACiBAAgSgAAogQAIEoA
-      AKIEACBKAACiBAAgSgAAogQAIEoAAKIEACBKAACiBAAgSgAAogQAIEoAAKIEACBKAACiBAAg
-      SgAAogQAIEoAAKIEACBKAACiBAAgSgAAogQAIEoAAKIEACBKAACiBAAgSgAAogQAIEoAAKIE
-      ACBKAACiBAAgSgAAogQAIEoAAKIEACBKAACiBAAgSgAAogQAIEoAAKIEACBKAACiBAAgSgAA
-      ogQAIEoAAKIEACBKAACiBAAgSgAAogQAIEoAAKIEACBKAACiBAAgSgAAogQAIEoAAKIEACBK
-      AACiBAAgSgAAogQAIEoAAKIEACBKAACiBAAgSgAAogQAIEoAAKIEACBKAACiBAAgSgAAogQA
-      IEoAAKIEACBKAACiBAAgSgAAogQAIEoAAKIEACBKAACiBAAgSgAAogQAIEoAAKIEACBKAACi
-      BAAgSgAAogQAIEoAAKIEACBKAACiBAAgSgAAogQAIEoAAKIEACBKAACiBAAgSgAAogQAIEoA
-      AKIEACBKAACiBAAgSgAAogQAIEoAAKIEACBKAACiBAAgSgAAogQAIEoAAKIEACBKAACiBAAg
-      SgAAogQAIEoAAKIEACBKAACiBAAgSgAAogQAIGpx6mK3+xq2m/UltwCcxXw+Pzjv99/esyNm
-      0zRN1x4BwOX5AgKIEgCAKAEAiBIAgKhfD5Mil7kCl4MAAAAASUVORK5CYII=
+      BAAgSgAAogQAIEoAAKIEACBKAACiBAAgSgAAogQAIEoAAKIEACBqu/bwfP4t99t15hYAJtqM
+      McarRwAwnxMQQJQAAEQJAEDU6ifwz/fHstvtZ24BYKLVAOx2++V0vszcAsBETkAAUQIAECUA
+      AFECABAlAABRAgAQJQAAUQIAECUAAFECABAlAABRAgAQJQAAUQIAECUAAFECABAlAABRAgAQ
+      JQAAUQIAECUAAFECABAlAABRAgAQJQAAUQIAECUAAFECABAlAABRAgAQJQAAUQIAECUAAFEC
+      ABAlAABRAgAQJQAAUQIAECUAAFECABAlAABRAgAQJQAAUQIAECUAAFECABAlAABRAgAQJQAA
+      UQIAECUAAFECABAlAABRAgAQJQAAUQIAECUAAFECABAlAABRAgAQJQAAUQIAECUAAFECABAl
+      AABRAgAQJQAAUQIAECUAAFECABAlAABRAgAQJQAAUQIAECUAAFECABAlAABRAgAQJQAAUQIA
+      ECUAAFECABAlAABRAgAQJQAAUQIAECUAAFECABAlAABRAgAQJQAAUQIAECUAAFECABAlAABR
+      AgAQJQAAUQIAECUAAFECABAlAABRAgAQJQAAUQIAECUAAFECABAlAABRAgAQJQAAUQIAECUA
+      AFECABAlAABRAgAQJQAAUQIAECUAAFECABAlAABRAgAQJQAAUQIAECUAAFECABAlAABRAgAQ
+      JQAAUQIAECUAAFECABAlAABRAgAQJQAAUQIAECUAAFECABAlAABRAgAQJQAAUQIAECUAAFEC
+      ABAlAABRAgAQJQAAUQIAECUAAFECABAlAABRAgAQJQAAUQIAECUAAFECABAlAABRAgAQJQAA
+      UQIAECUAAFECABAlAABRAgAQJQAAUQIAECUAAFECABAlAABRAgAQJQAAUQIAECUAAFECABAl
+      AABRAgAQJQAAUQIAECUAAFECABAlAABRAgAQJQAAUdu1h8fjd7nfrjO3ADDRZowxXj0CgPmc
+      gACiBAAgSgAAogQAIOofpU4gkIgkT8cAAAAASUVORK5CYII=
     </thumbnail>
     <thumbnail height='384' name='Show Information' width='384'>
       iVBORw0KGgoAAAANSUhEUgAAAYAAAAGACAYAAACkx7W/AAAACXBIWXMAAA7DAAAOwwHHb6hk
