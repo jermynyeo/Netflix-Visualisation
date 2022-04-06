@@ -65,3 +65,4 @@ def getSentOverview():
     chart_div_for_use_in_jinja_template2 = Markup(chart_div_string2)
 
     return render_template('sent.html', pop=chart_div_for_use_in_jinja_template , unpop=chart_div_for_use_in_jinja_template2)
+
