@@ -3,7 +3,7 @@
 ## File Directory
 |- Data (data for application)
 |- project (application)
-|- Tableau Files (Visualization of Netflix data) 
+|- Tableau Files (Visualisation of Netflix data) 
 |- Data Cleaning.ipynb (Data Wrangling)
 |- Procfile 
 |- requirements.txt (List of libraries used)
