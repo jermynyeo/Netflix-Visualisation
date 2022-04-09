@@ -2,7 +2,7 @@
 
 ## File Directory
 |- Data (data for application)
-|- Project (application)
+|- project (application)
 |- Tableau Files (Visualization of Netflix data) 
 |- Data Cleaning.ipynb (Data Wrangling)
 |- Procfile 
